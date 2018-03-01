@@ -1,0 +1,79 @@
+
+Skip to content
+This repository
+
+    Pull requests
+    Issues
+    Marketplace
+    Explore
+
+    @capslockqq
+
+1
+0
+
+    0
+
+capslockqq/USV-autopilot
+Code
+Issues 0
+Pull requests 0
+Projects 0
+Wiki
+Insights
+Settings
+USV-autopilot/.travis.yml
+261f384 17 days ago
+@capslockqq capslockqq added some test travis stuff
+36 lines (32 sloc) 582 Bytes
+sudo: required 
+# Enable C++ support
+language: cpp
+
+# Compiler selection
+compiler:
+  - g++
+  
+# Build steps
+script:
+  - pwd
+  - sudo apt-get install libxorg-gtest-dev
+  - sudo apt-get install libcppunit-dev
+  - sudo apt install libgtest-dev cmake
+  - cd /usr/src/gtest
+  - pwd
+  - sudo cmake CMakeLists.txt
+  - sudo make
+  - sudo cp *.a /usr/lib
+  - pwd
+  - cd ~
+  - cd build/capslockqq/USV-autopilot
+  - pwd
+  - ls
+  - cd USV-autopilot/USV-autopilot/
+  - make clean
+  - make
+  - cd ../Sample-Test1
+  - make clean
+  - make
+  - ls
+  - ./Source.out
+  
+  
+notifications:
+  email: false
+
+    © 2018 GitHub, Inc.
+    Terms
+    Privacy
+    Security
+    Status
+    Help
+
+    Contact GitHub
+    API
+    Training
+    Shop
+    Blog
+    About
+

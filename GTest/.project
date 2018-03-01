@@ -24,4 +24,16 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>header</name>
+			<type>2</type>
+			<location>/home/emil/git/TestRepoEclipse/TestProject/header</location>
+		</link>
+		<link>
+			<name>source</name>
+			<type>2</type>
+			<location>/home/emil/git/TestRepoEclipse/TestProject/source</location>
+		</link>
+	</linkedResources>
 </projectDescription>

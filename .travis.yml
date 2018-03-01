@@ -13,16 +13,12 @@ script:
   - sudo apt-get install libcppunit-dev
   - sudo apt install libgtest-dev cmake
   - cd /usr/src/gtest
-  - pwd
   - sudo cmake CMakeLists.txt
   - sudo make
   - sudo cp *.a /usr/lib
-  - pwd
   - cd ~
-  - cd build/capslockqq/USV-autopilot
-  - pwd
-  - ls
-  - cd USV-autopilot/USV-autopilot/
+  - cd build/capslockqq/TestRepoEclipse 
+  - cd GTest/Debug
   - make clean
   - make
   - cd ../Sample-Test1

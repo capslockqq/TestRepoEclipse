@@ -3,9 +3,10 @@
 using namespace std;
 
 int main() {
-	int j = 3;
-	cout << i << endl;
-	int i = 0;
+	int j = 32;
 	cout << j << endl;
+	j = 0;
+	cout << j+1 << endl;
+
 	return 0;
 }

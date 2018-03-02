@@ -9,5 +9,6 @@ int main() {
 	cout << j+1 << endl;
 	cout << "hej mads" << endl;
 	cout << "added this feature" << endl;
+	cout << "new feature" << endl;
 	return 0;
 }

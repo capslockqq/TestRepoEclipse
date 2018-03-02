@@ -7,7 +7,7 @@ namespace {
 		some_class obj;
 	};
 
-	TEST_F(SomeTest, tesingSomethingNice) {
+	TEST_F(SomeTest, testReturnThreeExpectedTrue) {
 		ASSERT_EQ(3, obj.return_three());
 	}
 }
